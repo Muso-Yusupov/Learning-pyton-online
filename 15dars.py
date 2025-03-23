@@ -1,6 +1,9 @@
 ###Python izohli lug'atini yarating va lug'atga kamida 10 ta so'z qo'shing. Lug'atdagi har bir kalit va qiymatni for tsikli yordamida, alifbo ketma-ketligida chiroyli qilib konsolga chiqaring. 
+
 python_lugati = {'input':'ma\'lumot oluvchi function','print':'funtion displaying codes','if/else/elif':'shart functions','lower()':'kichik harf qiluvchi method','upper()':'barcha harflarni katta qiluvchi method','title()':'bosh harfni katta qiluvchi method','for':'for cyclei','title':'ma\'lumot turini aniqlovchi function','del':'ma\'lumot o\'chiruvchi method','append()':'ro\'yxatga ma\'lumot qo\'shadi'}
+
 for k in sorted(python_lugati):
+
     print(k)
 
 
@@ -42,5 +45,7 @@ else:
     print(f"{meal}ning narxi {narh}so'm ekan.")
     a = float(input("Nechi xissa xohlaysiz?:\n"))
     print(f"Jami {meal} uchun {narh*a}so'm")
+    
+print("Rahmat haridingiz uchun")
 
 
