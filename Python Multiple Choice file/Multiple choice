@@ -1,0 +1,25 @@
+
+from questions import Questions
+
+question_prompts = [
+    "What is the difference between 203 and 123?\n A: 70\n B: 80\n C:90\n ",
+    "What is the product of 22 and 13?\n A:286\n B:276\n C:296\n ",
+    "If x=20 what is result of 0.4x+13.5=?\n A:23.5\n B:21.0500\n C:21.5000\n ",
+    "What is the result of division of 4 by 0?\n A: No answer\n B:0\n C:4\n "
+]
+
+questions = [
+    Questions(question_prompts[0],"B"),
+    Questions(question_prompts[1],"A"),
+    Questions(question_prompts[2],"C"),
+    Questions(question_prompts[3],"A")
+]
+def run_test(questions):
+    score = 0
+    for question in questions:
+        answer = input(question.prompt)
+        if answer.upper() == question.answer:
+            score += 1
+    print("You got",score,"out of",len(questions),"correct answers") 
+run_test(questions)       
+
